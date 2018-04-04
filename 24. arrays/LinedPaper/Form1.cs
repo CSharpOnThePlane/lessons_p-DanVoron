@@ -17,9 +17,11 @@ namespace LinedPaper {
 		protected override void OnPaint(PaintEventArgs e) {
 			Graphics graphics = e.Graphics;
 			graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-
-			for (int i = 0; i <= 150; i += 20) {
-				graphics.DrawLine(Pens.LightSkyBlue, 0, i, 300, i); // первая пара чисел - координаты начала отрезка, вторая - координаты конца
+            
+			for (int i = 0; i <= 8; i += 1)
+            {
+                int y = i * 20;
+				graphics.DrawLine(Pens.LightSkyBlue, 0, y, 300, y); // первая пара чисел - координаты начала отрезка, вторая - координаты конца
 			}
 		}
 	}

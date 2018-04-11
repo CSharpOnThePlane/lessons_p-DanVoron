@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/BEST GAME EVER.unity
+  isLoaded: 1
+  isActive: 1

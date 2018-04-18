@@ -19,26 +19,17 @@ namespace LoopyLandscape {
 			graphics = e.Graphics;
 			graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 
-			// солнце
-			graphics.FillEllipse(Brushes.Yellow, 310, 20, 70, 70);
+			// шар
+			graphics.FillEllipse(Brushes.Violet, 30, 50, 46, 66); // первая пара чисел - координаты, вторая - ширина и высота
+			// нитка
+			graphics.DrawLine(Pens.BlueViolet, 53, 116, 210, 300); // первая пара чисел - координаты начала отрезка, вторая - координаты конца
 
-			// рисуем дерево и траву
-            for(int i = 0;i<4;i++)
-            {
-                int g = i * 100;
-                DrawGrass(g, 270);
-                DrawTree(g, 200);
-            }
-                
+			// бобр
+			DrawHopper(208, 240);
 		}
 
-		private void DrawGrass(int x, int y) {
-			Image img = Image.FromFile("../../GrassBlock.png");
-			graphics.DrawImage(img, x, y);
-		}
-
-		private void DrawTree(int x, int y) {
-			Image img = Image.FromFile("../../TreeUgly.png");
+		private void DrawHopper(int x, int y) {
+			Image img = Image.FromFile("../../Hopper-Jumping.png");
 			graphics.DrawImage(img, x, y);
 		}
 	}

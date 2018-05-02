@@ -47,7 +47,12 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scrips\Cords.cs" />
+     <Compile Include="Assets\Scrips\Krytilka.cs" />
+     <Compile Include="Assets\Scrips\Svetofor.cs" />
+     <Compile Include="Assets\Scrips\TeleporForMine.cs" />
+     <Compile Include="Assets\Scrips\Teleporter.cs" />
      <Compile Include="Assets\Scrips\Timer.cs" />
+     <Compile Include="Assets\Scrips\Tp.cs" />
      <Compile Include="Assets\ScrptOtLydei\RasstoanieDoKuba.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

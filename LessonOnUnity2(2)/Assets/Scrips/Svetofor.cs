@@ -6,8 +6,6 @@ public class Svetofor : MonoBehaviour {
 	
 	float sec = 0;
 	void Start () {
-		Rigidbody massa = GetComponent<Rigidbody>();
-		massa.mass = 10;
 
 	}
 	
